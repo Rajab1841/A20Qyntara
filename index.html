@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>⚡ A20Qyntara · HOT DEALS 🔥</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, 'Segoe UI', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #1a0b2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .offer-card {
+            background: rgba(25, 15, 45, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(180, 130, 255, 0.5);
+            padding: 2.2rem 2rem;
+            max-width: 1400px;
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(170, 120, 255, 0.3) inset, 0 0 40px rgba(138, 43, 226, 0.3);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #c77dff, #ff6b9d, #ffd166);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        h1 i { background: none; font-size: 2.2rem; color: #e0aaff; filter: drop-shadow(0 0 8px #c77dff); -webkit-text-fill-color: #e0aaff; }
+        .sub-head {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #d4b8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-bottom: 1px dashed rgba(180, 130, 255, 0.5);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .popup-settings-wrapper { text-align: center; margin-bottom: 1rem; }
+        .popup-settings-btn {
+            background: linear-gradient(135deg, #ff9800, #f44336);
+            border: none;
+            border-radius: 40px;
+            padding: 12px 28px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .popup-settings-btn:hover { transform: scale(1.05); box-shadow: 0 0 35px rgba(255, 152, 0, 0.8); }
+        .popup-note { display: block; color: #ffcc80; font-size: 0.8rem; margin-top: 6px; }
+        .settings-panel {
+            background: rgba(40, 20, 70, 0.5);
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border: 1px solid #b47aff44;
+        }
+        .settings-panel label { color: #e0aaff; font-weight: 600; font-size: 0.95rem; white-space: nowrap; }
+        .settings-panel input {
+            width: 70px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            border: 2px solid #c77dff;
+            background: #1a0b2e;
+            color: #ffd166;
+            font-weight: 700;
+            font-size: 1rem;
+            text-align: center;
+            outline: none;
+        }
+        .settings-panel input:focus { border-color: #ffd166; box-shadow: 0 0 12px #ffd16655; }
+        .settings-panel input.limit-input {
+            width: 60px;
+            padding: 6px 8px;
+            font-size: 0.9rem;
+            border-color: #06d6a0;
+        }
+        .settings-panel input.limit-input:focus { border-color: #06d6a0; box-shadow: 0 0 12px #06d6a055; }
+        .save-btn {
+            background: linear-gradient(135deg, #06d6a0, #0d5240);
+            border: none;
+            border-radius: 30px;
+            padding: 8px 18px;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        .save-btn:hover { transform: scale(1.05); box-shadow: 0 0 15px #06d6a0; }
+        .auto-click-wrapper { text-align: center; margin-bottom: 1.5rem; }
+        .auto-click-btn {
+            background: linear-gradient(135deg, #ff6b9d, #c77dff);
+            border: none;
+            border-radius: 60px;
+            padding: 1rem 2.5rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 30px rgba(255, 107, 157, 0.6);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .auto-click-btn:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(255, 107, 157, 0.9); }
+        .auto-click-btn:disabled { background: #555; cursor: not-allowed; box-shadow: none; opacity: 0.6; }
+        .auto-status { display: block; margin-top: 10px; color: #ffd166; font-weight: 600; font-size: 0.95rem; min-height: 22px; }
+        .click-dashboard {
+            background: rgba(40, 20, 70, 0.6);
+            border-radius: 60px;
+            padding: 0.8rem 2rem;
+            margin-bottom: 2.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px 25px;
+            border: 1px solid #b47aff66;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(180, 122, 255, 0.2);
+        }
+        .total-clicks { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.3rem; color: #f0e2ff; }
+        .total-clicks i { font-size: 2rem; color: #ffb3c6; filter: drop-shadow(0 0 6px #ff6b9d); }
+        .click-badge {
+            background: #1a0b2ecc;
+            backdrop-filter: blur(4px);
+            padding: 8px 28px;
+            border-radius: 50px;
+            border: 1px solid #ffd166;
+            box-shadow: 0 0 15px #ffd16633;
+        }
+        .click-badge span { font-weight: 800; font-size: 2.2rem; color: #ffd166; margin-left: 10px; letter-spacing: 1px; }
+        .legend { display: flex; gap: 20px; font-size: 0.9rem; font-weight: 500; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-dot { width: 16px; height: 16px; border-radius: 20px; background: #9d4edd; box-shadow: 0 0 8px #c77dff; }
+        .legend-dot.used { background: #06d6a0; box-shadow: 0 0 12px #06d6a0; }
+        .btn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+        .offer-btn {
+            background: linear-gradient(135deg, #3c1e6b, #2a1548);
+            border: none;
+            border-radius: 60px;
+            padding: 0.85rem 0.6rem;
+            color: #f5edff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 0 1.5px #7b2cbf inset;
+            width: 100%;
+            text-decoration: none;
+            position: relative;
+            border: 1px solid #9d4edd55;
+        }
+        .offer-btn i { font-size: 1.2rem; color: #ffb3c6; }
+        .click-counter {
+            background: #1a0b2e;
+            border-radius: 40px;
+            padding: 2px 10px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #ffd166;
+            border: 1px solid #ffb347;
+            margin-left: 4px;
+        }
+        .offer-btn.clicked { background: linear-gradient(135deg, #0d5240, #073b2e); border: 1.5px solid #06d6a0; box-shadow: 0 0 18px #06d6a0, 0 0 0 1.5px #ffd166 inset; }
+        .offer-btn.clicked i { color: #ffea9f; }
+        .offer-btn.clicked .click-counter { background: #0a3328; color: #ffeaa6; border-color: #ffd966; }
+        .offer-btn:hover { transform: translateY(-4px) scale(1.03); background: linear-gradient(135deg, #5a2ca0, #3c1e6b); box-shadow: 0 18px 28px -8px black, 0 0 0 2.5px #e0aaff inset; }
+        .section-label { font-size: 1.15rem; margin: 18px 0 8px; color: #e0aaff; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .section-label i { color: #ffb3c6; }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: #cbb2ff;
+            border-top: 1px solid #b47aff66;
+            padding-top: 1.4rem;
+            font-size: 0.9rem;
+        }
+        .reset-link {
+            background: none;
+            border: 1.5px solid #e0aaff;
+            padding: 8px 22px;
+            border-radius: 50px;
+            color: #f0d6ff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+        .reset-link:hover { background: #b47aff30; border-color: #ffd166; color: #ffeaaf; }
+        @media (max-width: 700px) {
+            .offer-card { padding: 1.5rem 1.2rem; }
+            h1 { font-size: 2rem; }
+            .click-dashboard { flex-direction: column; align-items: stretch; border-radius: 40px; padding: 1.2rem; }
+            .btn-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+            .offer-btn { padding: 0.7rem 0.5rem; font-size: 0.8rem; }
+            .auto-click-btn { font-size: 1rem; padding: 0.8rem 1.8rem; }
+            .settings-panel { flex-direction: column; gap: 10px; }
+            .popup-settings-btn { font-size: 0.9rem; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="offer-card">
+    <h1><i class="fas fa-crown"></i> A20Qyntara DEAL ZONE <i class="fas fa-bolt"></i></h1>
+    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 51 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
+
+    <div class="popup-settings-wrapper">
+        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
+        <span class="popup-note">Click → Copy URL → Open new tab → Paste → Allow → Then START</span>
+    </div>
+
+    <div class="settings-panel">
+        <label for="roundInput">ROUNDS:</label>
+        <input type="number" id="roundInput" value="3" min="1" max="100" onchange="saveRoundSetting()">
+        <label for="limitInput">LIMIT:</label>
+        <input type="number" id="limitInput" class="limit-input" value="0" min="0" max="9999" placeholder="0=∞" onchange="saveRoundSetting()">
+        <button class="save-btn" onclick="saveRoundSetting()">SAVE</button>
+        <span style="color:#06d6a0;font-size:0.85rem;" id="saveConfirm"></span>
+    </div>
+
+    <div class="auto-click-wrapper">
+        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">START AUTO CLICK</button>
+        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s) · limit <span id="limitDisplay">∞</span></div>
+    </div>
+
+    <div class="click-dashboard">
+        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>TOTAL CLAIMS</span></div>
+        <div class="click-badge"><i class="fas fa-fingerprint"></i> <span id="globalCounter">0</span></div>
+        <div class="legend"><div class="legend-item"><span class="legend-dot"></span> available</div><div class="legend-item"><span class="legend-dot used"></span> claimed</div></div>
+    </div>
+
+    <div class="section-label"><i class="fas fa-star"></i> HOT PREMIUM DEALS <i class="fas fa-star"></i></div>
+    <div class="btn-grid" id="offerGrid">
+        <!-- 1 -->
+        <a href="https://ransomescapesmooth.com/xkf82ev5?key=b05051b376ab9d43b898e6890b993e47" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-shield"></i> A20QYNTARA SHIELD 1 <span class="click-counter" id="count_1">0</span></a>
+        <!-- 2 -->
+        <a href="https://ransomescapesmooth.com/ecp4uzz3g?key=4ac8db8f2d1f128ee56a12cb494ab81a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-rocket"></i> A20QYNTARA SPACE 2 <span class="click-counter" id="count_2">0</span></a>
+        <!-- 3 -->
+        <a href="https://ransomescapesmooth.com/fxpzxt2m1?key=9d605409dcc5bfcc1f0005981ee37c6d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-glass-whiskey"></i> A20QYNTARA DRINK 3 <span class="click-counter" id="count_3">0</span></a>
+        <!-- 4 -->
+        <a href="https://ransomescapesmooth.com/vdjn7rxbca?key=fd0c87bb9d9c4dd7a749cc0edfa883d9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-microchip"></i> A20QYNTARA CIRCUIT 4 <span class="click-counter" id="count_4">0</span></a>
+        <!-- 5 -->
+        <a href="https://ransomescapesmooth.com/vud2t6hjj?key=77cb2747ecfaf6b629eb486f56383ac2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-home"></i> A20QYNTARA HOME 5 <span class="click-counter" id="count_5">0</span></a>
+        <!-- 6 -->
+        <a href="https://ransomescapesmooth.com/gcff2raxc?key=105177d816fb82d19a4b60ee03b03f36" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-moon"></i> A20QYNTARA MOON 6 <span class="click-counter" id="count_6">0</span></a>
+        <!-- 7 -->
+        <a href="https://ransomescapesmooth.com/exmhyxmw?key=12ac4b703ac78cb55b9e0868b376e3e4" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-chess-pawn"></i> A20QYNTARA PAWN 7 <span class="click-counter" id="count_7">0</span></a>
+        <!-- 8 -->
+        <a href="https://ransomescapesmooth.com/iapj29km2?key=91ee4f2f51a3e006d5e13372063ba3d8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-bolt"></i> A20QYNTARA SURGE 8 <span class="click-counter" id="count_8">0</span></a>
+        <!-- 9 -->
+        <a href="https://ransomescapesmooth.com/wkmgp75res?key=c56b7245690a2e8442c2e2814c25efe8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-user-ninja"></i> A20QYNTARA NINJA 9 <span class="click-counter" id="count_9">0</span></a>
+        <!-- 10 -->
+        <a href="https://ransomescapesmooth.com/m5y9x7rta?key=819c8a0b5dfc67ccc492c954ca9d91e3" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-mobile-alt"></i> A20QYNTARA MOBILE 10 <span class="click-counter" id="count_10">0</span></a>
+        <!-- 11 -->
+        <a href="https://ransomescapesmooth.com/rmnpyshs5?key=6390e26148c4750abe839adc998f9a79" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-box-open"></i> A20QYNTARA BOX 11 <span class="click-counter" id="count_11">0</span></a>
+        <!-- 12 -->
+        <a href="https://ransomescapesmooth.com/z77kcvz8t?key=21d3e1705d6d2a754c42f9ccb8de1cab" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-coffee"></i> A20QYNTARA COFFEE 12 <span class="click-counter" id="count_12">0</span></a>
+        <!-- 13 -->
+        <a href="https://ransomescapesmooth.com/jh41bt3da?key=8334d490d40549a5bd51bcc0cd098e31" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-car"></i> A20QYNTARA CAR 13 <span class="click-counter" id="count_13">0</span></a>
+        <!-- 14 -->
+        <a href="https://ransomescapesmooth.com/faeqmd71zt?key=84de13e78591ff2120cf7dc2e6d562a2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-car-side"></i> A20QYNTARA SIDE 14 <span class="click-counter" id="count_14">0</span></a>
+        <!-- 15 -->
+        <a href="https://ransomescapesmooth.com/tdp2qcx0xv?key=ae2bf7d9da0116f6c971991a39a309c8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-fire"></i> A20QYNTARA DEVIL 15 <span class="click-counter" id="count_15">0</span></a>
+        <!-- 16 -->
+        <a href="https://ransomescapesmooth.com/gvz2me1nm?key=0d24cd9efef89d9a2ac2d73b7d81af9c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-circle-dot"></i> A20QYNTARA PROTON 16 <span class="click-counter" id="count_16">0</span></a>
+        <!-- 17 -->
+        <a href="https://ransomescapesmooth.com/nbcchufa4f?key=8c1028d092860ab88267b3337415c9ad" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-dog"></i> A20QYNTARA DOG 17 <span class="click-counter" id="count_17">0</span></a>
+        <!-- 18 -->
+        <a href="https://ransomescapesmooth.com/a6sc1ddgj?key=533ed8f327f9f70ab3ef8bc6d31a050e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-rainbow"></i> A20QYNTARA SPECTRUM 18 <span class="click-counter" id="count_18">0</span></a>
+        <!-- 19 -->
+        <a href="https://ransomescapesmooth.com/p6hm824z?key=797ce62148331f44776bb9d741462866" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-fire"></i> A20QYNTARA FLAME 19 <span class="click-counter" id="count_19">0</span></a>
+        <!-- 20 -->
+        <a href="https://ransomescapesmooth.com/e7nx79cgh?key=c2e199dbbe48ef4391d156fb39d18d4a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-fire"></i> A20QYNTARA INFERNO 20 <span class="click-counter" id="count_20">0</span></a>
+        <!-- 21 -->
+        <a href="https://ransomescapesmooth.com/sxvddnyaf8?key=d152556b3844a9a80dffd67d14d4b1b0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-leaf"></i> A20QYNTARA LEAF 21 <span class="click-counter" id="count_21">0</span></a>
+        <!-- 22 -->
+        <a href="https://ransomescapesmooth.com/dgq3y8275?key=f19a3a97d2134607d73cb5cb55df8ebb" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-paw"></i> A20QYNTARA PANTHER 22 <span class="click-counter" id="count_22">0</span></a>
+        <!-- 23 -->
+        <a href="https://ransomescapesmooth.com/p4ffrcqdee?key=31c2fb2a224e52fcb91a271cab963575" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-paw"></i> A20QYNTARA WOLF 23 <span class="click-counter" id="count_23">0</span></a>
+        <!-- 24 -->
+        <a href="https://ransomescapesmooth.com/y3jdaapkh?key=72779ab9bed57bd353e98ee77ccaaef7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-circle-notch"></i> A20QYNTARA AURA 24 <span class="click-counter" id="count_24">0</span></a>
+        <!-- 25 -->
+        <a href="https://ransomescapesmooth.com/abvtqws8?key=dbcbdde2b9c7b20be1f5554918a88408" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-cat"></i> A20QYNTARA CAT 25 <span class="click-counter" id="count_25">0</span></a>
+        <!-- 26 -->
+        <a href="https://ransomescapesmooth.com/ysan6ncc?key=1d1a1099bb8fd455ba9bd2e8a39f3607" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-meteor"></i> A20QYNTARA METEOR 26 <span class="click-counter" id="count_26">0</span></a>
+        <!-- 27 -->
+        <a href="https://ransomescapesmooth.com/vn7t3f83?key=1b83736880b0919fe949f674d4883a85" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_27" bn="27"><i class="fas fa-fire"></i> A20QYNTARA EMBER 27 <span class="click-counter" id="count_27">0</span></a>
+        <!-- 28 -->
+        <a href="https://ransomescapesmooth.com/x531smij?key=2293f48b41a2be6e63406bbe48db7797" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_28" bn="28"><i class="fas fa-clock"></i> A20QYNTARA TIME 28 <span class="click-counter" id="count_28">0</span></a>
+        <!-- 29 -->
+        <a href="https://ransomescapesmooth.com/xq8rbrr50?key=e7ba21c39253d5d47240ae08646d3c9f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_29" bn="29"><i class="fas fa-hat-wizard"></i> A20QYNTARA MYSTIC 29 <span class="click-counter" id="count_29">0</span></a>
+        <!-- 30 -->
+        <a href="https://ransomescapesmooth.com/ewyp8du4?key=79550e74540dbe86ef327c152941976d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_30" bn="30"><i class="fas fa-dove"></i> A20QYNTARA FALCON 30 <span class="click-counter" id="count_30">0</span></a>
+        <!-- 31 -->
+        <a href="https://ransomescapesmooth.com/s8cv1r03?key=f27e28dca20c2aec38e9c3a7b1e0b7f9" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_31" bn="31"><i class="fas fa-droplet"></i> A20QYNTARA WATER 31 <span class="click-counter" id="count_31">0</span></a>
+        <!-- 32 -->
+        <a href="https://ransomescapesmooth.com/nzdwtkt0n6?key=df17383dcd1d009c2e3bef32a0dcf038" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_32" bn="32"><i class="fas fa-umbrella-beach"></i> A20QYNTARA BEACH 32 <span class="click-counter" id="count_32">0</span></a>
+        <!-- 33 -->
+        <a href="https://ransomescapesmooth.com/ah7rp3de?key=039f15b8dc78ee9c73eb00ec3ff33b3f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_33" bn="33"><i class="fas fa-chess-bishop"></i> A20QYNTARA BISHOP 33 <span class="click-counter" id="count_33">0</span></a>
+        <!-- 34 -->
+        <a href="https://ransomescapesmooth.com/x40cfvicy?key=9fa7eec246a1e7c2327e3d022bf0f2a0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_34" bn="34"><i class="fas fa-fire"></i> A20QYNTARA PHOENIX 34 <span class="click-counter" id="count_34">0</span></a>
+        <!-- 35 -->
+        <a href="https://ransomescapesmooth.com/zjd4z8q62?key=e4766a744f3a168fdee723ec697562c3" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_35" bn="35"><i class="fas fa-rocket"></i> A20QYNTARA BOOST 35 <span class="click-counter" id="count_35">0</span></a>
+        <!-- 36 -->
+        <a href="https://ransomescapesmooth.com/dicgrnpge?key=ff5305ab3eca2e4d029f694936e81dfa" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_36" bn="36"><i class="fas fa-hand-fist"></i> A20QYNTARA FORCE 36 <span class="click-counter" id="count_36">0</span></a>
+        <!-- 37 -->
+        <a href="https://ransomescapesmooth.com/u5r821ahpd?key=2bb115c9fa9f092f95f685da9a9cb19a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_37" bn="37"><i class="fas fa-atom"></i> A20QYNTARA PLASMA 37 <span class="click-counter" id="count_37">0</span></a>
+        <!-- 38 -->
+        <a href="https://ransomescapesmooth.com/k3m63us1?key=c2432f43097f1c952cd970f74765e050" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_38" bn="38"><i class="fas fa-tv"></i> A20QYNTARA TV 38 <span class="click-counter" id="count_38">0</span></a>
+        <!-- 39 -->
+        <a href="https://ransomescapesmooth.com/ap70xci88?key=2b9ec80827cca9f595477110d678b85f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_39" bn="39"><i class="fas fa-lightbulb"></i> A20QYNTARA LIGHT 39 <span class="click-counter" id="count_39">0</span></a>
+        <!-- 40 -->
+        <a href="https://ransomescapesmooth.com/jprqmua01?key=2594a64058765b42a660507c865f5fa0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_40" bn="40"><i class="fas fa-cloud-rain"></i> A20QYNTARA RAIN 40 <span class="click-counter" id="count_40">0</span></a>
+        <!-- 41 -->
+        <a href="https://ransomescapesmooth.com/rftuyat70?key=69f27cc7d26a8da75a51b16cafb38cd2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_41" bn="41"><i class="fas fa-square"></i> A20QYNTARA PIXEL 41 <span class="click-counter" id="count_41">0</span></a>
+        <!-- 42 -->
+        <a href="https://ransomescapesmooth.com/ntv7anzy90?key=fe71e41a516a9929b74c74fb2b4eb141" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_42" bn="42"><i class="fas fa-dove"></i> A20QYNTARA EAGLE 42 <span class="click-counter" id="count_42">0</span></a>
+        <!-- 43 -->
+        <a href="https://ransomescapesmooth.com/v0m9kswfa?key=2d587da1b48e077765f72b6dc5a2f33c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_43" bn="43"><i class="fas fa-star"></i> A20QYNTARA FAIRY 43 <span class="click-counter" id="count_43">0</span></a>
+        <!-- 44 -->
+        <a href="https://ransomescapesmooth.com/ifbje8g3?key=9a4dc337ef7772d3196a23e3c8e8a80d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_44" bn="44"><i class="fas fa-plane"></i> A20QYNTARA JET 44 <span class="click-counter" id="count_44">0</span></a>
+        <!-- 45 -->
+        <a href="https://ransomescapesmooth.com/j0m1mtpfxd?key=4e18de3307c1e0d69b7bd0d0cb5f1c28" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_45" bn="45"><i class="fas fa-chess-rook"></i> A20QYNTARA ROOK 45 <span class="click-counter" id="count_45">0</span></a>
+        <!-- 46 -->
+        <a href="https://ransomescapesmooth.com/w2pbukvn?key=f8b5735d2fa02506e21384d95e8c3855" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_46" bn="46"><i class="fas fa-atom"></i> A20QYNTARA QUANTUM 46 <span class="click-counter" id="count_46">0</span></a>
+        <!-- 47 -->
+        <a href="https://ransomescapesmooth.com/juyv2tby2k?key=38f8db2eb9ba162beabe26dc8d477c39" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_47" bn="47"><i class="fas fa-sun"></i> A20QYNTARA SUN 47 <span class="click-counter" id="count_47">0</span></a>
+        <!-- 48 -->
+        <a href="https://ransomescapesmooth.com/i60d3z24e?key=2f4ffbbfe9ea0edabde7eccb619d42a2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_48" bn="48"><i class="fas fa-spider"></i> A20QYNTARA SPIDER 48 <span class="click-counter" id="count_48">0</span></a>
+        <!-- 49 -->
+        <a href="https://ransomescapesmooth.com/iut0wc7m7h?key=a9033fb03719dbc6183b6745c449b14a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_49" bn="49"><i class="fas fa-database"></i> A20QYNTARA BYTE 49 <span class="click-counter" id="count_49">0</span></a>
+        <!-- 50 -->
+        <a href="https://ransomescapesmooth.com/pepidu17?key=73e680656f6c92a537d855d950166877" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_50" bn="50"><i class="fas fa-star"></i> A20QYNTARA GALAXY 50 <span class="click-counter" id="count_50">0</span></a>
+        <!-- 51 -->
+        <a href="https://ransomescapesmooth.com/s41fbcr0?key=274f5af383429b243a81d365987045cb" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_51" bn="51"><i class="fas fa-dove"></i> A20QYNTARA BIRD 51 <span class="click-counter" id="count_51">0</span></a>
+    </div>
+
+    <div class="card-footer">
+        <span><i class="far fa-clock"></i> 51 active deals · instant access</span>
+        <div class="reset-link" onclick="resetAllCounters()"><i class="fas fa-arrows-rotate"></i> reset counters</div>
+    </div>
+</div>
+
+<script>
+    const btnsTotal = 51;
+    let cMap = {};
+    for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0;
+    const STORE = 'mega_51_generated', RKEY = 'auto_rounds_v8', LKEY = 'auto_limit_v1';
+
+    function lCounts() { try { let s=localStorage.getItem(STORE); if(s) { let p=JSON.parse(s); for(let k in cMap) if(typeof p[k]==='number') cMap[k]=p[k]; } } catch(e){} }
+    function sCounts() { try { localStorage.setItem(STORE, JSON.stringify(cMap)); } catch(e){} }
+    function total() { return Object.values(cMap).reduce((a,b)=>a+b,0); }
+
+    function refresh() {
+        document.getElementById('globalCounter').innerText = total();
+        for (let i=1; i<=btnsTotal; i++) {
+            let cs = document.getElementById('count_'+i), b = document.getElementById('btn_'+i);
+            if (cs && b) { let v = cMap['btn_'+i]||0; cs.innerText = v; v>0 ? b.classList.add('clicked') : b.classList.remove('clicked'); }
+        }
+    }
+
+    function inc(id) { if(cMap.hasOwnProperty(id)) { cMap[id]++; refresh(); sCounts(); } }
+
+    function resetAllCounters() { for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0; refresh(); sCounts(); }
+
+    function openPopupSettings() {
+        let a = window.open('about:blank', '_blank');
+        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>Allow Popups</h1><div class="steps"><p>Step 1: Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>Step 2: Open new tab (Ctrl+T)</p><p>Step 3: Paste & Enter</p><p>Step 4: Allow this site</p><p>Step 5: Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">COPY SETTINGS URL</button></body></html>`);a.document.close();}
+    }
+
+    function gRounds() { try { let s=localStorage.getItem(RKEY); return s ? parseInt(s) : 3; } catch(e){ return 3; } }
+    function gLimit() { try { let s=localStorage.getItem(LKEY); if(!s) return 0; let v=parseInt(s); return (isNaN(v)||v<0) ? 0 : v; } catch(e){ return 0; } }
+
+    function saveRoundSetting() {
+        let inp = document.getElementById('roundInput');
+        let linp = document.getElementById('limitInput');
+        let cf = document.getElementById('saveConfirm');
+        let v = parseInt(inp.value); if(isNaN(v)||v<1) v=1; if(v>100) v=100;
+        inp.value = v; localStorage.setItem(RKEY, v);
+        let lv = parseInt(linp.value);
+        if(isNaN(lv) || lv < 0) lv = 0;
+        if(lv > 9999) lv = 9999;
+        linp.value = lv; localStorage.setItem(LKEY, lv);
+        document.getElementById('roundDisplay').innerText = v;
+        document.getElementById('limitDisplay').innerText = (lv === 0) ? '∞' : lv;
+        cf.innerText = 'Saved: ' + v + ' round(s) · limit ' + (lv===0?'∞':lv);
+        setTimeout(()=>cf.innerText='',2500);
+    }
+
+    function loadRounds() {
+        let r = gRounds(); let l = gLimit();
+        document.getElementById('roundInput').value = r;
+        document.getElementById('limitInput').value = l;
+        document.getElementById('roundDisplay').innerText = r;
+        document.getElementById('limitDisplay').innerText = (l === 0) ? '∞' : l;
+    }
+
+    let running = false;
+    function startAutoClick() {
+        if(running){alert('Already running!');return;}
+        let btns = document.querySelectorAll('.offer-btn');
+        if(!btns.length){alert('No buttons!');return;}
+        let rds = gRounds(); let lim = gLimit();
+        let totalPossible = btns.length * rds;
+        let maxClicks = (lim === 0 || lim > totalPossible) ? totalPossible : lim;
+        let st = document.getElementById('autoStatus'), sBtn = document.getElementById('autoClickBtn');
+        running = true; sBtn.disabled = true; sBtn.textContent = 'CLICKING...';
+        let cur = 0, round = 1, idx = 0;
+        st.textContent = 'Round 1/'+rds+' · 0/'+maxClicks + (lim===0?' (∞)':' (limit '+lim+')');
+        let t = setInterval(() => {
+            if(cur >= maxClicks){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks' + (lim>0 && lim<totalPossible ? ' (limit reached)' : '');
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(round > rds){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks ('+btns.length+'×'+rds+')';
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(idx >= btns.length){
+                round++; idx = 0;
+                if(round > rds) return;
+                st.textContent = 'Round '+round+'/'+rds+' · '+cur+'/'+maxClicks;
+                return;
+            }
+            let b = btns[idx], bid = b.id, url = b.href || b.getAttribute('href');
+            if(url){
+                let a = document.createElement('a');
+                a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                cur++;
+                if(bid && cMap.hasOwnProperty(bid)) inc(bid);
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' OK';
+            } else {
+                cur++;
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' SKIP';
+            }
+            idx++;
+        }, 2000);
+    }
+
+    for(let i=1;i<=btnsTotal;i++){let b=document.getElementById('btn_'+i);if(b)b.addEventListener('click',()=>inc('btn_'+i));}
+    lCounts();loadRounds();refresh();
+</script>
+</body>
+</html>
